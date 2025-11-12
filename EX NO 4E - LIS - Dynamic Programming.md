@@ -4,10 +4,13 @@
 ## AIM:
 To write a Java program to for given constraints.
 Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
 Example 1:
+
 Input: nums = [10,9,2,5,3,7,101,18]
 Output: 4
 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+
 ## Algorithm
 1. Create an array dp of size n, where each dp[i] represents the length of the LIS ending at index i. Initialize all values of dp to 1 (each element is a subsequence of length 1 by itself).
 2. For each element nums[i] (from index 1 to n-1), check all previous elements nums[j] (from 0 to i-1).
